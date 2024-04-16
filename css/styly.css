@@ -21,13 +21,13 @@ nav {
   color: lightgray;
 }
 
-#odkaz a {
+#odkaz-jinam a {
   padding: 19px;
   text-decoration: none;
   color: lightgray;
 }
 
-/* Pro všechny odkazy v bloku navigace při přejetí kurzoru myši */ {
+#odkaz-jinam a:hover {
   color: white;
   background-color: rgb(0,153,204);
 }
@@ -72,19 +72,21 @@ li {
   margin-left: 20px;
 }
 
-/* Nastavte pravidlo pro všechny tučně a modře zvýrazněné texty v odrážkách. */
+.zvyrazneni {
+  color: rgb(0,153,204);
+}
 
-/* Nastavte pravidlo pro v�echny odstavce-pozn�mky: 
-    * na lev�m okraji bude �ed� ohrani�en� 10px siln�
-    * text bude zleva odsazen o 50 pixel�
-    * pou�it� font bude o 10% men�� ne� z�kladn� p�smo
-    * p�smo bude naklon�n� (kurz�va)
-*/
+.poznamka {
+  border-left: 10px rgb(128, 128, 128) solid;
+  padding-left: 50px;
+  font-size: 0.9em;
+  font-style: italic;
+}
 
 footer {
   color: gray;
   margin: 10px auto;
-  /* Z�pat� bude zarovn�no na st�ed */
+  text-align: center;
   font-size: 80%;
 }
 
@@ -92,6 +94,11 @@ strong {
   font-weight: bold;
 }
 
+mark {
+  background-color: rgb(102, 153, 0);
+  color: white;
+}
 
-/* Nastavte pravidla pro zna�ky vlo�en� do textu �vodn�ho odstavce,
-   aby kone�n� vzheld textu odpov�dal p�edloze. */
+code {
+  font-family:'Courier New', Courier, monospace;
+}
